@@ -1,0 +1,25 @@
+{
+  "name": "website",
+  "version": "0.0.1",
+  "description": "![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/PyxySpace/www) ![GitHub repo size](https://img.shields.io/github/repo-size/PyxySpace/www) ![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/pyxy.space?publish) ![GitHub last commit](https://img.shields.io/github/last-commit/PyxySpace/www) ![GitHub contributors](https://img.shields.io/github/contributors/PyxySpace/www)",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PyxySpace/www.git"
+  },
+  "author": "Nicolas Notararigo (Neerfix)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PyxySpace/www/issues"
+  },
+  "homepage": "https://github.com/PyxySpace/www#readme",
+  "dependencies": {
+    "standard-version": "^8.0.0"
+  }
+}
