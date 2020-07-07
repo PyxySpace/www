@@ -1,0 +1,68 @@
+version: 2.1
+orbs:
+  node: circleci/node@1.1.6
+  slack: circleci/slack@3.4.2
+jobs:
+  install:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: npm install
+  test:
+    executor:
+      name: node/default
+    steps:
+      - checkout
+      - node/with-cache:
+          steps:
+            - run: npm run test
+  add_ssh:
+    executor:
+      name: node/default
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "e7:8b:77:48:07:70:4e:35:ba:2e:e7:e9:f0:7c:bc:7f"
+  deploy-prod:
+    executor:
+      name: node/default
+    steps:
+      - run:
+          name: Deploy Prod
+          command: |
+            ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "./deploy-website.sh"
+  slack-notify:
+    executor:
+      name: node/default
+    steps:
+      - slack/status:
+          failure_message: "🔴 $CIRCLE_BRANCH | website public deploy has failed! $SLACK_MENTIONS"
+          success_message: "🎉 $CIRCLE_BRANCH | website public deploy has succeeded! $SLACK_MENTIONS"
+          webhook: $SLACK_WEBHOOK
+workflows:
+  deploy:
+    jobs:
+      - install
+      - test:
+          requires:
+            - install
+      - add_ssh
+      - deploy-prod:
+          requires:
+            - add_ssh
+          filters:
+            branches:
+              only: master
+      - deploy-beta:
+          requires:
+            - add_ssh
+          filters:
+            branches:
+              only: develop
+      - slack-notify:
+          requires:
+            - deploy-prod
+            - deploy-beta

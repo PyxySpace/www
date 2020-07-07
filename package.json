@@ -1,0 +1,12 @@
+{
+  "name": "www-website",
+  "version": "0.1.0",
+  "description": "Website to Pyxy Space",
+  "main": "index.js",
+  "author": "Nicolas Notararigo (Neerfix) <nicolas.notararigo@ynov.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "standard-version": "^8.0.0"
+  }
+}
