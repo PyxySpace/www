@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/PyxySpace/www/compare/v0.1.1...v0.1.2) (2020-07-09)
+
+
+### Features
+
+* add standard-version ([0f71d82](https://github.com/PyxySpace/www/commit/0f71d82fa3111b87f7a56ba1a4dff567796857da))
+
+
+### Bug Fixes
+
+* update script to merge automaticaly develop into master ([f723625](https://github.com/PyxySpace/www/commit/f7236256112eb5d6e2a5cd036f618883b3cab772))
+
 ### 0.1.1 (2020-07-09)
 
 
