@@ -1,15 +1,25 @@
 {
-  "name": "www-website",
+  "name": "www",
   "version": "0.1.0",
-  "description": "Website to Pyxy Space",
+  "description": "![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/PyxySpace/www) ![GitHub repo size](https://img.shields.io/github/repo-size/PyxySpace/www) ![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/pyxy.space?publish) ![GitHub last commit](https://img.shields.io/github/last-commit/PyxySpace/www) ![GitHub contributors](https://img.shields.io/github/contributors/PyxySpace/www)",
   "main": "index.js",
-  "author": "Nicolas Notararigo (Neerfix) <nicolas.notararigo@ynov.com>",
-  "license": "MIT",
-  "private": true,
-  "script": {
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "releaes": "standard-version"
-  }
-  "dependencies": {
-    "standard-version": "^8.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PyxySpace/www.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PyxySpace/www/issues"
+  },
+  "homepage": "https://github.com/PyxySpace/www#readme"
 }
