@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.3](https://github.com/PyxySpace/www/compare/v0.1.2...v0.1.3) (2020-07-09)
+
+
+### Bug Fixes
+
+* remove .env ([79909ae](https://github.com/PyxySpace/www/commit/79909ae928d85e8b5a6b80bc073a507e5e901ddc))
+* script to release and .gitignore ([beb7901](https://github.com/PyxySpace/www/commit/beb7901b9742c33f0f1512b04d0c83c7c8ff3162))
+
 ### [0.1.2](https://github.com/PyxySpace/www/compare/v0.1.1...v0.1.2) (2020-07-09)
 
 
