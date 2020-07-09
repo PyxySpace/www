@@ -6,6 +6,9 @@
   "author": "Nicolas Notararigo (Neerfix) <nicolas.notararigo@ynov.com>",
   "license": "MIT",
   "private": true,
+  "script": {
+    "releaes": "standard-version"
+  }
   "dependencies": {
     "standard-version": "^8.0.0"
   }
