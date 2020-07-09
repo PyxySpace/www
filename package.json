@@ -10,7 +10,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "standard-version"
+    "release": "git checkout master && git merge develop && standard-version && git push --follow-tags origin develop"
   },
   "repository": {
     "type": "git",
