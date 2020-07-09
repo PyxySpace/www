@@ -1,6 +1,6 @@
 {
   "name": "www",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/PyxySpace/www) ![GitHub repo size](https://img.shields.io/github/repo-size/PyxySpace/www) ![Mozilla HTTP Observatory Grade](https://img.shields.io/mozilla-observatory/grade-score/pyxy.space?publish) ![GitHub last commit](https://img.shields.io/github/last-commit/PyxySpace/www) ![GitHub contributors](https://img.shields.io/github/contributors/PyxySpace/www)",
   "main": "index.js",
   "directories": {
