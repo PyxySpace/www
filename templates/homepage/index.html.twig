@@ -1,0 +1,92 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}PYXY.space - Your activities, your life, your rules.!{% endblock %}
+
+{% block body %}
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "Organization",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Lyon, France",
+                "postalCode": "69007",
+                "streetAddress": "Proxima B, Century"
+            },
+            "email": "contact@pyxy.space",
+            "member": [
+                {
+                    "@type": "Organization"
+                },
+                {
+                    "@type": "Organization"
+                }
+            ],
+            "alumni": [
+                {
+                    "@type": "Person",
+                    "name": "Nicolas Notararigo"
+                }
+            ],
+            "name": "Pyxy.space"
+        }
+    </script>
+
+    <header>
+        <div class="collapse bg-dark" id="navbarHeader">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-md-7 py-4">
+                        <h4 class="text-white">About</h4>
+                        <p class="text-muted">Pyxy is a WebApp to find your activity in random; save your activities and the system find an activity for you..</p>
+                    </div>
+                    <div class="col-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="https://twitter.com/Pyxy_space" target="_blank" class="text-white">Follow on Twitter</a></li>
+                            <li><a href="https://www.facebook.com/PyxySpace" target="_blank" class="text-white">Like on Facebook</a></li>
+                            <li><a href="mailto:contact@pyxy.space" target="_blank" class="text-white">Email me</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="https://www.pyxy.space" class="navbar-brand d-flex align-items-center">
+                    <i class="fab fa-fly"></i>
+                    &nbsp;<strong>Pyxy</strong>
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main role="main">
+
+        <section class="jumbotron text-center">
+            <div class="container">
+                <h1>Pyxy</h1>
+                <p class="lead text-muted">Pyxy is a website to find your activity in random; save your activities and the system find an activity for you.</p>
+                <blockquote class="blockquote">
+                    <p class="mb-0">"Build or Realize your dream with your friends."</p>
+                    <footer class="blockquote-footer">Albert Einstein</footer>
+                </blockquote>
+                <p>
+                    <a href="https://app.pyxy.space"><button class="btn btn-warning btn-sm">Use App</button></a>
+                    <a href="https://beta.pyxy.space"><button class="btn btn-primary btn-sm">Use Beta App</button></a>
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-muted">
+        <div class="container">
+            <p>Temporary Theme by Bootstrap &copy; Pyxy.</p>
+            <p>New to Bootstrap? <a href="https://getbootstrap.com/">Visit the homepage</a> or read our <a href="/docs/4.5/getting-started/introduction/">getting started guide</a>.</p>
+        </div>
+    </footer>
+{% endblock %}
