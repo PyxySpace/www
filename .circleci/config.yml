@@ -33,7 +33,7 @@ jobs:
       - run:
           name: Deploy Prod
           command: |
-            ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "./deploy-website.sh"
+            ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "/dev/scripts/deploy-website.sh"
   slack-notify:
     executor:
       name: node/default
