@@ -26,14 +26,14 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "e7:8b:77:48:07:70:4e:35:ba:2e:e7:e9:f0:7c:bc:7f"
-  deploy-prod:
+  deploy:
     executor:
       name: node/default
     steps:
       - run:
           name: Deploy Prod
           command: |
-            ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "./deploy-website.sh"
+            ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "./scripts/deploy-website.sh"
   slack-notify:
     executor:
       name: node/default
@@ -50,19 +50,12 @@ workflows:
           requires:
             - install
       - add_ssh
-      - deploy-prod:
+      - deploy:
           requires:
             - add_ssh
           filters:
             branches:
               only: master
-      - deploy-beta:
-          requires:
-            - add_ssh
-          filters:
-            branches:
-              only: develop
       - slack-notify:
           requires:
-            - deploy-prod
-            - deploy-beta
+            - deploy
