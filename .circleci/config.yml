@@ -17,7 +17,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "$SSH_FINGERPRINT"
+            - "97:42:ce:90:bb:0d:b7:ec:40:b6:34:80:cc:6e:76:59"
   deploy:
     executor:
       name: node/default
