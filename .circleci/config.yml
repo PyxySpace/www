@@ -11,14 +11,6 @@ jobs:
       - node/with-cache:
           steps:
             - run: npm install
-  test:
-    executor:
-      name: node/default
-    steps:
-      - checkout
-      - node/with-cache:
-          steps:
-            - run: npm run test
   add_ssh:
     executor:
       name: node/default
@@ -46,10 +38,9 @@ workflows:
   deploy:
     jobs:
       - install
-      - test:
+      - add_ssh:
           requires:
             - install
-      - add_ssh
       - deploy:
           requires:
             - add_ssh
