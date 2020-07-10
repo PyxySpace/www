@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.5](https://github.com/PyxySpace/www/compare/v0.1.1...v0.1.5) (2020-07-10)
+
+
+### Bug Fixes
+
+* composer install ([cee2553](https://github.com/PyxySpace/www/commit/cee25531c4641569e3f8df5d97f49701233c2cd1))
+* script to release ([635dbf6](https://github.com/PyxySpace/www/commit/635dbf6bacfd9d3fe00edb20a8912a4d4785bd78))
+* update script to merge automaticaly develop into master ([f723625](https://github.com/PyxySpace/www/commit/f7236256112eb5d6e2a5cd036f618883b3cab772))
+
 ### [0.1.4](https://github.com/PyxySpace/www/compare/v0.1.1...v0.1.4) (2020-07-10)
 
 
