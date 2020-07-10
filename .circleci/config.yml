@@ -26,7 +26,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "$SSH_FINGERPRINT"
-  deploy-prod:
+  deploy:
     executor:
       name: node/default
     steps:
@@ -50,19 +50,12 @@ workflows:
           requires:
             - install
       - add_ssh
-      - deploy-prod:
+      - deploy:
           requires:
             - add_ssh
           filters:
             branches:
               only: master
-      - deploy-beta:
-          requires:
-            - add_ssh
-          filters:
-            branches:
-              only: develop
       - slack-notify:
           requires:
-            - deploy-prod
-            - deploy-beta
+            - deploy
