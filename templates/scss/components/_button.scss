@@ -1,0 +1,10 @@
+.btn{
+  &.btn-danger{
+    background-color: $danger;
+    border-color: $danger;
+  }
+  &.btn-success{
+    background-color: $success;
+    border-color: $success
+  }
+}

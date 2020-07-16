@@ -23,6 +23,7 @@
         <script data-ad-client="ca-pub-9292619253140598" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
         <link href="https://getbootstrap.com/docs/4.5/examples/album/album.css" rel="stylesheet">
         <script src="https://kit.fontawesome.com/cecc6a8642.js" crossorigin="anonymous"></script>
+        <link href="{{ asset('css/style.css') }}" rel="stylesheet"/>
         <style>
             .bd-placeholder-img {
                 font-size: 1.125rem;
@@ -41,6 +42,30 @@
         </style>
     </head>
     <body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Pyxy</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">App</a>
+                    </li>
+                </ul>
+                <div class="form-inline my-2 my-lg-0">
+                    <button class="btn btn-primary my-2 my-sm-0">Se connecter</button>
+                    &nbsp;
+                    <button class="btn btn-warning my-2 my-sm-0">S'inscrire</button>
+                </div>
+            </div>
+        </nav>
+    </header>
         {% block body %}{% endblock %}
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
