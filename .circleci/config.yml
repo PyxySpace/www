@@ -46,9 +46,6 @@ workflows:
   deploy:
     jobs:
       - install
-      - test:
-          requires:
-            - install
       - add_ssh
       - deploy-prod:
           requires:
@@ -56,13 +53,6 @@ workflows:
           filters:
             branches:
               only: master
-      - deploy-beta:
-          requires:
-            - add_ssh
-          filters:
-            branches:
-              only: develop
       - slack-notify:
           requires:
             - deploy-prod
-            - deploy-beta

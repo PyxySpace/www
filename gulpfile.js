@@ -1,16 +1,17 @@
-var gulp            = require('gulp');
-var sass            = require('gulp-sass');
-var autoprefixer    = require('gulp-autoprefixer');
-var cssnano         = require('gulp-cssnano');
-var sourcemaps      = require('gulp-sourcemaps');
-var browserSync     = require('browser-sync').create();
-var reload          = browserSync.reload;
+const gulp          = require('gulp');
+const sass          = require('gulp-sass');
+const autoprefixer  = require('gulp-autoprefixer');
+const cssnano       = require('gulp-cssnano');
+const sourcemaps    = require('gulp-sourcemaps');
+const browserSync   = require('browser-sync').create();
+const reload        = browserSync.reload;
 
-var src = './assets';
-var dest = './';
+const src = 'templates';
+const dest = 'public/assets/';
 
 gulp.task('sass', function () {
-    return gulp.src(src + '/styles/**/*.scss')
+    console.log(gulp)
+    return gulp.src(src + '/scss/Style.scss')
         .pipe(sass())
         .pipe(gulp.dest('./css'));
 });
