@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/PyxySpace/www/compare/v0.1.8...v0.1.9) (2020-10-12)
+
+
+### Bug Fixes
+
+* add makefile ([ca7ca09](https://github.com/PyxySpace/www/commit/ca7ca09f254afa5931eaf29d9b2565fbaca0cfb5))
+* update release command ([709c6ff](https://github.com/PyxySpace/www/commit/709c6ffc51537af557840c241bf101acb420b395))
+
 ### [0.1.8](https://github.com/PyxySpace/www/compare/v0.1.7...v0.1.8) (2020-10-12)
 
 
