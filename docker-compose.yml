@@ -1,0 +1,43 @@
+version: '3.1'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/app:cached
+      - .docker/nginx/nginx.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - "php"
+
+  php:
+    build: .docker/php
+    working_dir: /app
+    volumes:
+      - .:/app:cached
+    environment:
+      APP_ENV: dev
+    depends_on:
+      - mysql
+      - redis
+
+  redis:
+    image: "redis:alpine"
+
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: space_cube_www
+      TZ: Europe/Paris
+    depends_on:
+      - "redis"
+
+  composer:
+    image: composer:latest
+    volumes:
+      - .:/app:cached
+      - ~/.composer/auth.json:/tmp/auth.json
+    depends_on:
+      - php
+    user: "33" #www-data
