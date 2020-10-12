@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/PyxySpace/www/compare/v0.1.7...v0.1.8) (2020-10-12)
+
+
+### Features
+
+* add docker compose and dockerfile && update dependencies ([6caf420](https://github.com/PyxySpace/www/commit/6caf4203a7ddad5778531c3e58c6b8a77ebc5af1))
+
+
+### Bug Fixes
+
+* test env ([7bf3044](https://github.com/PyxySpace/www/commit/7bf3044ef75337987e8ec735dff3cfaf6f43f409))
+
 ### [0.1.7](https://github.com/PyxySpace/www/compare/v0.1.6...v0.1.7) (2020-07-10)
 
 ### [0.1.6](https://github.com/PyxySpace/www/compare/v0.1.2...v0.1.6) (2020-07-10)
